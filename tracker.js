@@ -9,6 +9,8 @@ const getTotalBTC = currencies =>
   formatFloat(_.reduce(currencies, (acc, currency) => acc + currency.value, 0))
 const getProfitBTC = currencies =>
   formatFloat(_.reduce(currencies, (acc, currency) => acc + currency.profit, 0))
+const getProfitPercentageBTC = currencies =>
+  Math.round(_.reduce(currencies, (acc, currency) => acc + currency.profitPercentage, 0))
 
 Promise.resolve()
   .then(fetchRates.bind(null, providersConfig))
@@ -16,7 +18,8 @@ Promise.resolve()
   .then(result => ({
     currencies: result,
     totalBTC: getTotalBTC(result),
-    profitBTC: getProfitBTC(result)
+    profitBTC: getProfitBTC(result),
+    profitPercentageBTC: getProfitPercentageBTC(result)
   }))
   .then(result => JSON.stringify(result, null, 2))
   .then(console.log)
@@ -55,6 +58,7 @@ function buildValue (providers, currencies, rates) {
 
     currency.value = formatFloat(currency.wallet * rate)
     currency.profit = formatFloat(currency.value - currency.investment)
+    currency.profitPercentage = formatFloat((currency.profit / currency.investment) * 100)
 
     return currency
   })
