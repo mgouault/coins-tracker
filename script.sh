@@ -2,4 +2,4 @@
 
 currentDate=`date +%Y-%m-%d_%H-%M-%S`
 
-nodeV8 tracker.js > logs/$currentDate.json
+~/.nvm/versions/node/v8.1.2/bin/node tracker.js > logs/$currentDate.json
