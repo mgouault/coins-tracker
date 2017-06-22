@@ -1,28 +1,26 @@
-{
-  "providers": [
-    {
-      "name": "POLONIEX",
-      "url": "https://poloniex.com/public?command=returnTicker",
-      "path": "data",
-      "parser": "['$providerSlug$'].last"
-    },
-    {
-      "name": "GDAX",
-      "url": "https://api.gdax.com/products/stats",
-      "path": "data",
-      "parser": "['$providerSlug$'].stats_24hour.last"
-    },
-    {
-      "name": "KRAKEN",
-      "url": "https://api.kraken.com/0/public/Ticker?pair=ICNXBT",
-      "path": "data.result",
-      "parser": "['$providerSlug$'].c[0]"
-    },
-    {
-      "name": "BITTREX",
-      "url": "https://bittrex.com/api/v2.0/pub/Markets/GetMarketSummaries",
-      "path": "data.result",
-      "parser": "['$providerSlug$'].Summary.Last"
-    }
-  ]
-}
+[
+  {
+    "name": "POLONIEX",
+    "url": "https://poloniex.com/public?command=returnTicker",
+    "path": "data",
+    "parser": "['$providerSlug$'].last"
+  },
+  {
+    "name": "GDAX",
+    "url": "https://api.gdax.com/products/stats",
+    "path": "data",
+    "parser": "['$providerSlug$'].stats_24hour.last"
+  },
+  {
+    "name": "BITTREX",
+    "url": "https://bittrex.com/api/v2.0/pub/Markets/GetMarketSummaries",
+    "path": "data.result",
+    "parser": "[$providerSlug$].Summary.Last"
+  },
+  {
+    "name": "KRAKEN",
+    "url": "https://api.kraken.com/0/public/Ticker?pair=XICNXXBT",
+    "path": "data.result",
+    "parser": "['$providerSlug$'].c[0]"
+  }
+]

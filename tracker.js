@@ -1,21 +1,22 @@
 let axios = require('axios')
 let _ = require('lodash')
-let config = require('./config.json')
+let providersConfig = require('./providers.json')
+let wallet = require('./wallet.json')
 
 const formatFloat = nb =>
   parseFloat(parseFloat(nb).toFixed(8))
 const getTotalBTC = currencies =>
   formatFloat(_.reduce(currencies, (acc, currency) => acc + currency.value, 0))
-const getProfitsBTC = currencies =>
-  formatFloat(_.reduce(currencies, (acc, currency) => acc + currency.profits, 0))
+const getProfitBTC = currencies =>
+  formatFloat(_.reduce(currencies, (acc, currency) => acc + currency.profit, 0))
 
 Promise.resolve()
-  .then(fetchRates.bind(null, config.providers))
-  .then(buildValue.bind(null, config.providers, config.currencies))
+  .then(fetchRates.bind(null, providersConfig))
+  .then(buildValue.bind(null, providersConfig, wallet))
   .then(result => ({
     currencies: result,
     totalBTC: getTotalBTC(result),
-    profitsBTC: getProfitsBTC(result)
+    profitBTC: getProfitBTC(result)
   }))
   .then(result => JSON.stringify(result, null, 2))
   .then(console.log)
@@ -53,7 +54,7 @@ function buildValue (providers, currencies, rates) {
     currency.investment = formatFloat(currency.investment)
 
     currency.value = formatFloat(currency.wallet * rate)
-    currency.profits = formatFloat(currency.value - currency.investment)
+    currency.profit = formatFloat(currency.value - currency.investment)
 
     return currency
   })
