@@ -2,129 +2,129 @@
   {
     "name": "ANS",
     "currency": "BTC",
-    "wallet": 23.78678405,
-    "investment": 0.06494464,
     "provider": "BITTREX",
-    "providerSlug": 8
+    "providerSlug": 8,
+    "wallet": 29.43295110,
+    "investment": 0.08100421
   },
   {
     "name": "ARDR",
     "currency": "BTC",
-    "wallet": 170.91436586,
-    "investment": 0.0182971,
     "provider": "POLONIEX",
-    "providerSlug": "BTC_ARDR"
+    "providerSlug": "BTC_ARDR",
+    "wallet": 170.91436586,
+    "investment": 0.01829710
   },
   {
     "name": "DASH",
     "currency": "BTC",
-    "wallet": 0.18575202,
-    "investment": 0.01428718,
     "provider": "POLONIEX",
-    "providerSlug": "BTC_DASH"
+    "providerSlug": "BTC_DASH",
+    "wallet": 0.18575202,
+    "investment": 0.01428718
   },
   {
     "name": "DOGE",
     "currency": "BTC",
-    "wallet": 3504.1671913,
-    "investment": 0.00403989,
     "provider": "POLONIEX",
-    "providerSlug": "BTC_DOGE"
+    "providerSlug": "BTC_DOGE",
+    "wallet": 3504.16719130,
+    "investment": 0.00403989
   },
   {
     "name": "ETH",
     "currency": "BTC",
-    "wallet": 0.09779683,
-    "investment": 0.012,
     "provider": "GDAX",
-    "providerSlug": "ETH-BTC"
+    "providerSlug": "ETH-BTC",
+    "wallet": 0.09779683,
+    "investment": 0.01200000
   },
   {
     "name": "FCT",
     "currency": "BTC",
-    "wallet": 1.041013916,
-    "investment": 0.01425124,
     "provider": "POLONIEX",
-    "providerSlug": "BTC_FCT"
+    "providerSlug": "BTC_FCT",
+    "wallet": 1.04101391,
+    "investment": 0.01425124
   },
   {
     "name": "GNT",
     "currency": "BTC",
-    "wallet": 54.397,
-    "investment": 0.01428718,
     "provider": "POLONIEX",
-    "providerSlug": "BTC_GNT"
+    "providerSlug": "BTC_GNT",
+    "wallet": 54.39700000,
+    "investment": 0.01428718
   },
   {
     "name": "ICN",
     "currency": "BTC",
-    "wallet": 5.05367,
-    "investment": 0.00792,
     "provider": "KRAKEN",
-    "providerSlug": "XICNXXBT"
+    "providerSlug": "XICNXXBT",
+    "wallet": 5.05367000,
+    "investment": 0.00792000
   },
   {
     "name": "LBC",
     "currency": "BTC",
-    "wallet": 14.54736477,
-    "investment": 0.00401677,
     "provider": "POLONIEX",
-    "providerSlug": "BTC_LBC"
+    "providerSlug": "BTC_LBC",
+    "wallet": 14.54736477,
+    "investment": 0.00401677
   },
   {
     "name": "LSK",
     "currency": "BTC",
-    "wallet": 3.35136213,
-    "investment": 0.00396396,
     "provider": "POLONIEX",
-    "providerSlug": "BTC_LSK"
+    "providerSlug": "BTC_LSK",
+    "wallet": 3.35136213,
+    "investment": 0.00396396
   },
   {
     "name": "LTC",
     "currency": "BTC",
-    "wallet": 3.21420483,
-    "investment": 0.05688619,
     "provider": "POLONIEX",
-    "providerSlug": "BTC_LTC"
+    "providerSlug": "BTC_LTC",
+    "wallet": 3.21420483,
+    "investment": 0.05688619
   },
   {
     "name": "SC",
     "currency": "BTC",
-    "wallet": 5591.59862206,
-    "investment": 0.03828964,
     "provider": "POLONIEX",
-    "providerSlug": "BTC_SC"
+    "providerSlug": "BTC_SC",
+    "wallet": 5591.59862206,
+    "investment": 0.03828964
   },
   {
     "name": "SYS",
     "currency": "BTC",
-    "wallet": 92.4955088,
-    "investment": 0.00803352,
     "provider": "POLONIEX",
-    "providerSlug": "BTC_SYS"
+    "providerSlug": "BTC_SYS",
+    "wallet": 92.49550880,
+    "investment": 0.00803352
   },
   {
     "name": "XEM",
     "currency": "BTC",
-    "wallet": 52.37382709,
-    "investment": 0.00403989,
     "provider": "POLONIEX",
-    "providerSlug": "BTC_XEM"
+    "providerSlug": "BTC_XEM",
+    "wallet": 52.37382709,
+    "investment": 0.00403989
   },
   {
     "name": "XRP",
     "currency": "BTC",
-    "wallet": 162.12091146,
-    "investment": 0.01694441,
     "provider": "POLONIEX",
-    "providerSlug": "BTC_XRP"
+    "providerSlug": "BTC_XRP",
+    "wallet": 162.12091146,
+    "investment": 0.01694441
   },
   {
     "name": "ZEC",
     "currency": "BTC",
-    "wallet": 0.05285486,
-    "investment": 0.00799999,
     "provider": "POLONIEX",
-    "providerSlug": "BTC_ZEC"
+    "providerSlug": "BTC_ZEC",
+    "wallet": 0.05285486,
+    "investment": 0.00799999
   }
 ]
